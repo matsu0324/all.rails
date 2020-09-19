@@ -7,7 +7,7 @@ class TodolistsController < ApplicationController
  def create
    list = List.new(list_params)
    list.save
-   redirect_to todolist_path(list.id)
+   redirect_to '/top'
  end
 
 def index
